@@ -43,15 +43,20 @@ int main()
 	cin >> start;
 	cout << "\tEnter finish range=>";
 	cin >> end;
-	while (start != end)
+	temp = start;
+	start = end;
+	end = temp;
+
+	while (start!= end+1)
 	{
 		// (start % 2) > 0;
 
-		start++;
-
+		
 		//Numbers range: //
 		cout << start << "  " << endl;
-		
+
+		start++;
+
 		
 		
 
