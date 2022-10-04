@@ -65,6 +65,40 @@ int main()
 
 
 	}break;
+	case 3:
+	{
+		int start, end, temp;
+		cout << "\tEnter start range=>";
+		cin >> start;
+		cout << "\tEnter finish range=>";
+		cin >> end;
+		temp = start;
+		start = end;
+		end = temp;
+		while (start != end + 1)
+		{
+			
+
+			if ((start % 2) > 0)
+			{
+
+				cout << start;
+			}
+			else{
+				cout << start;
+			}
+		
+			
+			
+			start++;
+
+			
+
+
+
+
+		}
+	}break;
 
 	}return 0;
 }
