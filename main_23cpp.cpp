@@ -72,21 +72,23 @@ int main()
 		cin >> start;
 		cout << "\tEnter finish range=>";
 		cin >> end;
-		temp = start;
+		if (start > end)
+		{
+        temp = start;
 		start = end;
 		end = temp;
+		}
+		
 		while (start != end + 1)
 		{
 			
 
-			if ((start % 2) > 0)
+			if (start % 2== 0)
 			{
 
-				cout << start;
+				cout << start<<endl;
 			}
-			else{
-				cout << start;
-			}
+			
 		
 			
 			
@@ -99,6 +101,7 @@ int main()
 
 		}
 	}break;
+	
 
 	}return 0;
 }
